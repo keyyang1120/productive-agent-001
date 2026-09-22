@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "label": "Review protocol specifications", "status": "done", "minutes": 30 },
+    { "label": "Build local agent", "status": "done", "minutes": 45 },
+    { "label": "Get feedback from a developer", "status": "open", "minutes": 0 }
+  ]
+}
