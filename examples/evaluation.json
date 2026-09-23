@@ -1,0 +1,687 @@
+[
+  {
+    "name": "最初のデモ：3件・75分",
+    "input": {
+      "items": [
+        {
+          "label": "仕様を読む",
+          "status": "done",
+          "minutes": 30
+        },
+        {
+          "label": "実装する",
+          "status": "done",
+          "minutes": 45
+        },
+        {
+          "label": "意見をもらう",
+          "status": "open",
+          "minutes": 0
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 3,
+      "completed": 2,
+      "open": 1,
+      "totalMinutes": 75
+    }
+  },
+  {
+    "name": "全部完了",
+    "input": {
+      "items": [
+        {
+          "label": "調査",
+          "status": "done",
+          "minutes": 20
+        },
+        {
+          "label": "記録",
+          "status": "done",
+          "minutes": 10
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 2,
+      "completed": 2,
+      "open": 0,
+      "totalMinutes": 30
+    }
+  },
+  {
+    "name": "全部未完了",
+    "input": {
+      "items": [
+        {
+          "label": "調査",
+          "status": "open",
+          "minutes": 0
+        },
+        {
+          "label": "準備",
+          "status": "open",
+          "minutes": 5
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 2,
+      "completed": 0,
+      "open": 2,
+      "totalMinutes": 5
+    }
+  },
+  {
+    "name": "0分の作業",
+    "input": {
+      "items": [
+        {
+          "label": "開始前",
+          "status": "open",
+          "minutes": 0
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 1,
+      "completed": 0,
+      "open": 1,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "name": "日本語の作業名",
+    "input": {
+      "items": [
+        {
+          "label": "架空の資料を確認",
+          "status": "done",
+          "minutes": 12
+        },
+        {
+          "label": "架空の図を描く",
+          "status": "open",
+          "minutes": 18
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 2,
+      "completed": 1,
+      "open": 1,
+      "totalMinutes": 30
+    }
+  },
+  {
+    "name": "同じ名前でも別の作業として数える",
+    "input": {
+      "items": [
+        {
+          "label": "確認",
+          "status": "done",
+          "minutes": 10
+        },
+        {
+          "label": "確認",
+          "status": "done",
+          "minutes": 10
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 2,
+      "completed": 2,
+      "open": 0,
+      "totalMinutes": 20
+    }
+  },
+  {
+    "name": "最大100件を処理する",
+    "input": {
+      "items": [
+        {
+          "label": "架空作業0",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業1",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業2",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業3",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業4",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業5",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業6",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業7",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業8",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業9",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業10",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業11",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業12",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業13",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業14",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業15",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業16",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業17",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業18",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業19",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業20",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業21",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業22",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業23",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業24",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業25",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業26",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業27",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業28",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業29",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業30",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業31",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業32",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業33",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業34",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業35",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業36",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業37",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業38",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業39",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業40",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業41",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業42",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業43",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業44",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業45",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業46",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業47",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業48",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業49",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業50",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業51",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業52",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業53",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業54",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業55",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業56",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業57",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業58",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業59",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業60",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業61",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業62",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業63",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業64",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業65",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業66",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業67",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業68",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業69",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業70",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業71",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業72",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業73",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業74",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業75",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業76",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業77",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業78",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業79",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業80",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業81",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業82",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業83",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業84",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業85",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業86",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業87",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業88",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業89",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業90",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業91",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業92",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業93",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業94",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業95",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業96",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業97",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業98",
+          "status": "done",
+          "minutes": 1
+        },
+        {
+          "label": "架空作業99",
+          "status": "done",
+          "minutes": 1
+        }
+      ]
+    },
+    "expected": {
+      "itemCount": 100,
+      "completed": 100,
+      "open": 0,
+      "totalMinutes": 100
+    }
+  },
+  {
+    "name": "負の時間を拒否",
+    "input": {
+      "items": [
+        {
+          "label": "不正",
+          "status": "done",
+          "minutes": -1
+        }
+      ]
+    },
+    "expectedError": true
+  },
+  {
+    "name": "空の依頼を拒否",
+    "input": {
+      "items": []
+    },
+    "expectedError": true
+  },
+  {
+    "name": "未知の項目を拒否",
+    "input": {
+      "items": [
+        {
+          "label": "確認",
+          "status": "done",
+          "minutes": 1
+        }
+      ],
+      "externalUrl": "https://example.invalid"
+    },
+    "expectedError": true
+  }
+]
